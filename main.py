@@ -2,7 +2,19 @@ import os
 import subprocess
 import time
 
-time.sleep(3)
+print("pierwsze uruchomienie?? tak/nie")
+first = input()
+
+if first == "tak":
+    print("pobieram potrzebne rzeczy")
+    time.sleep(1)
+    os.system("pip install flask")
+    os.system("pip install subprocess")
+    OS = input("jestes na linuxie czy windowsie linux/windows?")
+    if OS == "linux":
+        os.system("curl -L https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64 -o cloudflared")
+    elif OS == "windows":
+        os.system("winget install --id Cloudflare.cloudflared")
 
 if os.name == "posix":
     subprocess.run(["clear"])
