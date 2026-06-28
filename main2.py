@@ -1,10 +1,9 @@
 import kahoot
 import asyncio
 import random
-import main
 
 async def main():
-    pin = 123 # kod gry
+    pin = 680541 # kod gry
     name = "bot" + str(random.randint(1, 9999))
 
     bot = kahoot.client.KahootClient()

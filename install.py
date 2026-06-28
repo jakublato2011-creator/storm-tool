@@ -2,6 +2,7 @@ import os
 
 os.system("pip install kahoot --break-system-packages")
 os.system("pip install flask --break-system-packages")
+os.system("pip install subprocess --break-system-packages")
 
 if os.name == "posix":
     os.system("wget https://github.com/cloudflare/cloudflared/releases/latest/download/cloudflared-linux-amd64")

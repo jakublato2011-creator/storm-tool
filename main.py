@@ -13,7 +13,7 @@ print("███████╗   ██║   ██║   ██║████�
 print("╚════██║   ██║   ██║   ██║██╔══██╗██║╚██╔╝██║")
 print("███████║   ██║   ╚██████╔╝██║  ██║██║ ╚═╝ ██║")
 print("╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝")
-print("                                  version 3.0")
+print("                                  version 3.1")
 print("")
 print("")
 print("")
@@ -38,7 +38,7 @@ while True:
         print("╚════██║   ██║   ██║   ██║██╔══██╗██║╚██╔╝██║      ██╔═══╝ ██╔══██║██║╚════██║██╔══██║██╔══╝  ██╔══██╗")
         print("███████║   ██║   ╚██████╔╝██║  ██║██║ ╚═╝ ██║      ██║     ██║  ██║██║███████║██║  ██║███████╗██║  ██║")
         print("╚══════╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝╚═╝     ╚═╝      ╚═╝     ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝╚══════╝╚═╝  ╚═╝")
-        print("                                                                                           version 1.0")
+        print("                                                                                           version 1.1")
         print("")
         print("")
         print("    [1] facebook")
@@ -92,10 +92,6 @@ while True:
 
         kahoot_option = input("    choose an option: ")
         if kahoot_option == "1":
-            if os.name == "posix":
-                os.system("clear")
-            elif os.name == "nt":
-                os.system("cls")
             print("")
             print("")
             print("")
@@ -106,7 +102,7 @@ while True:
             print("")
             print("")
             print("")
-            subprocess.run(["python", "run.py"])
+            subprocess.Popen(["python", "run.py"])
 
         break
 
